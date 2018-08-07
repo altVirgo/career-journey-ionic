@@ -1,0 +1,41 @@
+.md {
+    page-uploadPhoto {
+        ion-content {
+            .content-box {
+                padding: 2.81rem;
+                .item-md {
+                    padding: 0;
+                    .item-inner {
+                        border: none;
+                        .input-wrapper {
+                            display: block;
+                            ion-label {
+                                float: left;
+                                color: #333333;
+                                margin-right: 2.56rem;
+                                font-size: 1.75rem;
+                            }
+                            ion-select {
+                                float: left;
+                                height: 5rem;
+                                width: 25rem;
+                                max-width: 25rem;
+                                background-color: #EDEDED;
+                                border-radius: 0.5rem;
+                                outline: none;
+                                border: 1px solid #EDEDED;
+                                padding: 0 2.3rem;
+                                line-height: 5rem;
+                                &.select-md {
+                                    .select-icon {
+                                        top: 1.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

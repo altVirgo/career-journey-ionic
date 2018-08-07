@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color='dark'>
+    <ion-title>
+      生涯之旅
+    </ion-title>
+  </ion-navbar>
+  </ion-header>
+  <ion-content>
+    <div id="sign-box">
+      <div class="student-info">
+        <div class="student-item" *ngFor="let student of memberList;let i=index;" [ngClass]="{'item-even':(i+1)%2===0}">
+          <div class="item-img">
+            <img src="{{student.imgUrl}}" alt="">
+          </div>
+          <div class="item-info">
+            <p class="item-name">{{student.name}}</p>
+            <p>
+              <span>{{student.class}}</span>
+              <span>{{student.job}}</span>
+              <span>{{student.branch}}</span>
+            </p>
+          </div>
+          <div class="check-btn" *ngIf="!student.checked" (click)="checkOne(student,i)">
+            <button>签到</button>
+          </div>
+          <div class="check-info" *ngIf="student.checked">
+            <p>已签到</p>
+            <p>{{student.time}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="teacher-check">
+        注意：小组成员全部签到后，才能开展活动，如有同学不能参加，请老师确认开始
+        <button (click)="teacherCheck()">老师确认</button>
+      </div>
+    </div>
+  </ion-content>

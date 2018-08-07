@@ -1,0 +1,106 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+p {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ion-content {
+    button {
+        width: 25rem;
+        height: 5rem;
+        line-height: 5rem;
+        font-size: 2rem;
+        background-color: #44B0F5;
+        color: #fff;
+        border-radius: 0.5rem;
+    }
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 100em);
+}
+
+.md {
+    .toolbar-title-md {
+        text-align: center;
+    }
+    ion-modal {
+        ion-backdrop {
+            visibility: visible;
+        }
+        .modal-wrapper {
+            position: absolute;
+            width: 37.5rem;
+            height: 22.5rem;
+            left: calc(50% - (37.5rem/2));
+            top: calc(50% - (22.5rem/2));
+            border-radius: 0.5rem;
+            overflow: hidden;
+            min-height: 22.5rem;
+            ion-content {
+                font-size: 1.75rem;
+                line-height: 5rem;
+                .scroll-content {
+                    overflow: hidden;
+                }
+                p {
+                    margin-bottom: 1.67rem;
+                    label {
+                        color: #333333;
+                        margin-right: 2.56rem;
+                    }
+                }
+                input[type="text"],
+                input[type="password"],
+                input[type="number"],
+                textarea {
+                    height: 5rem;
+                    width: 25rem;
+                    background-color: #EDEDED;
+                    border-radius: 0.5rem;
+                    outline: none;
+                    border: 1px solid #EDEDED;
+                    padding: 0 2.3rem;
+                }
+            }
+            ion-footer {
+                height: 5rem;
+                line-height: 5rem;
+                button {
+                    float: left;
+                    width: 50%;
+                    height: 100%;
+                    font-size: 1.75rem;
+                    background-color: #ffffff;
+                    &.btn-cancel {
+                        color: #999999;
+                        border-right: 1px solid #ebebeb;
+                    }
+                    &.btn-ok {
+                        color: #333333;
+                    }
+                }
+            }
+        }
+    }
+}

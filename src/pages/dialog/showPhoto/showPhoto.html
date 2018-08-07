@@ -1,0 +1,12 @@
+<ion-content>
+    <div class="content-box">
+        <!-- <img src="{{imageData}}" alt=""> -->
+        <video id="video-content" src="{{imageData}}" width='100%' height='100%'>
+            您的浏览器不支持 video 标签。
+        </video>
+    </div>
+</ion-content>
+<ion-footer>
+    <button class="btn-ok" (click)='ok()'>确认</button>
+    <button class="btn-cancel" (click)="cancel()">取消</button>
+</ion-footer>

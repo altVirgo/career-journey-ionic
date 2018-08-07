@@ -1,0 +1,94 @@
+page-questions {
+    .before-training {
+        text-align: center;
+        input {
+            border: 1px solid #FFFFFF;
+            width: 27.19rem;
+            height: 5rem;
+            line-height: 5rem;
+            font-size: 1.75rem;
+            padding-left: 3.88rem;
+            background-color: rgba(79, 74, 94, 0.67);
+            border-radius: 0.5rem;
+            margin-bottom: 3.12rem;
+            margin-top: 11.31rem;
+            box-shadow: inset 3px 3px 5px 2px rgba(0, 0, 0, 0.164);
+            &::-webkit-input-placeholder {
+                color: #CCCCCC;
+            }
+            &::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                color: #CCCCCC;
+            }
+            &:-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: #CCCCCC;
+            }
+            &:-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #CCCCCC;
+            }
+        }
+    }
+    .cur-training {
+        font-size: 1.63rem;
+        line-height: 3rem;
+        ion-radio {
+            float: left;
+        }
+        .title {
+            text-align: center;
+            font-size: 1.75rem;
+            margin-bottom: 1.55rem;
+        }
+        .list-box {
+            height: 21.88rem;
+            overflow-y: scroll;
+            margin-right: 2.13rem;
+        }
+        .footer {
+            height: 3.75rem;
+            line-height: 3.75rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0 2.31rem;
+            margin-right: 2.13rem;
+            button {
+                float: right;
+                width: auto;
+                background-color: #F3B819;
+                border: 1px solid #FFF609;
+                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                background-image: none;
+                height: 2.5rem;
+                line-height: 2.5rem;
+                font-size: 1.5rem;
+                padding: 0 1.81rem;
+                margin-top: 0.56rem;
+            }
+        }
+        .input-wrapper {
+            padding-left: 1rem;
+        }
+        .item-md {
+            color: #FFFFFF;
+            background-color: transparent;
+            font-size: 1.63rem;
+            .radio-md {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: -8px;
+            }
+        }
+        .item-radio-checked.item-md ion-label {
+            color: #FFFFFF;
+        }
+        .item-md.item-block .item-inner {
+            border: none;
+        }
+    }
+    .after-training {
+        text-align: center;
+        line-height: 30rem;
+    }
+}

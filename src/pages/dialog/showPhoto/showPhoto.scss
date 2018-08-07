@@ -1,0 +1,19 @@
+.md {
+    page-showPhoto {
+        ion-content {
+            .content-box {
+                padding: 2rem;
+                img {
+                    width: 46.5rem;
+                    height: 28rem;
+                }
+            }
+        }
+    }
+    .modal-show-photo .modal-wrapper {
+        top: calc(50% - (37rem/2));
+        left: calc(50% - (50.5rem/2));
+        width: 50.5rem;
+        height: 37rem;
+    }
+}

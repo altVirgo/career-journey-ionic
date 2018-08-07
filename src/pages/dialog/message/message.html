@@ -1,0 +1,13 @@
+<ion-content>
+    <!-- <span class="modal-close" (click)="viewCtrl.dismiss()"> close</span> -->
+    <div class="content-box">
+        <div class="msg-item" *ngFor="let msg of msgList;let i=index;" [ngClass]="{'active':curMsgIndex===i}">
+            <div class="msg-title" (click)="toggleShow(i)">{{msg.title}}
+                <span></span>
+            </div>
+            <div class="msg-content">
+                <div>{{msg.msg}}</div>
+            </div>
+        </div>
+    </div>
+</ion-content>

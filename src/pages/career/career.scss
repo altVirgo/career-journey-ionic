@@ -1,0 +1,1365 @@
+@keyframes flash {
+    0% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes flash
+/* Firefox */
+
+    {
+    0% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes flash
+/* Safari 和 Chrome */
+
+    {
+    0% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes flash
+/* Opera */
+
+    {
+    0% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+page-career {
+    ion-content {
+        #career-box {
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            min-height: 100%;
+            &>.flex {
+                display: flex;
+                padding: 3.25rem 6.88rem;
+                height: 100%;
+                .flex-left {
+                    width: 43.25rem;
+                    height: 100%;
+                    overflow: hidden;
+                    .box-one {
+                        width: 100%;
+                        p {
+                            text-align: center;
+                            &.title {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 2.5rem;
+                                line-height: 3.9rem;
+                                font-weight: bolder;
+                                color: #ffffff;
+                                margin: 0;
+                            }
+                            &.time {
+                                color: #ffffff;
+                                font-family: MicrosoftYaHei;
+                                font-size: 1.88rem;
+                                line-height: 1.88rem;
+                                margin-top: 0rem;
+                            }
+                        }
+                        .banner {
+                            margin-top: 1.4rem;
+                            height: 20rem;
+                            border-radius: 0.5rem;
+                            overflow: hidden;
+                            .swiper-slide img {
+                                float: left;
+                                height: 20rem;
+                            }
+                        }
+                    }
+                    .box-two {
+                        margin-top: 1.25rem;
+                        width: 100%;
+                        .TV-box {
+                            background-color: #262626;
+                            padding: 1.06rem;
+                            height: 24.25rem;
+                            border-radius: 0.4rem;
+                            .title {
+                                color: #ffffff;
+                                font-size: 1.5rem;
+                                line-height: 1.5rem;
+                                margin: 0 0 1.13rem 1.13rem;
+                            }
+                            .flex {
+                                display: flex;
+                                height: 19.25rem;
+                                #future-TV {
+                                    width: 33.63rem;
+                                    background-color: black;
+                                }
+                                .TV-list {
+                                    ul {
+                                        height: 100%;
+                                        overflow-y: scroll;
+                                        margin: 0;
+                                        padding-left: 1.56rem;
+                                    }
+                                    li {
+                                        color: #E6E8E5;
+                                        font-size: 1.5rem;
+                                        margin-bottom: 1.2rem;
+                                        font-family: MicrosoftYaHei;
+                                        list-style: none;
+                                        font-weight: lighter;
+                                        &.active {
+                                            color: #ffffff;
+                                            font-weight: bolder;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .message-box {
+                            background-color: #262626;
+                            height: 3.5rem;
+                            margin-top: 0.88rem;
+                            border-radius: 0.5rem;
+                            overflow: hidden;
+                            .icon-play {
+                                float: left;
+                                width: 1.44rem;
+                                height: 1.44rem;
+                                margin-right: 1.5rem;
+                                margin-left: 1.25rem;
+                                margin-top: 1.06rem;
+                                font-size: 1.6rem;
+                            }
+                            marquee {
+                                width: calc(100% - 5.69rem);
+                                p {
+                                    span {
+                                        margin-right: 2rem;
+                                        font-size: 1.5rem;
+                                        height: 3.5rem;
+                                        line-height: 3.5rem;
+                                        list-style: none;
+                                        color: #9F9F9F;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .flex-right {
+                    flex: 1;
+                    width: 60.94rem;
+                    margin-left: 3.19rem;
+                    overflow: hidden;
+                    .box-header {
+                        height: 4.13rem;
+                        line-height: 4.13rem;
+                        background-color: rgba(249, 253, 255, 0.3);
+                        color: #FFFFFF;
+                        div {
+                            font-size: 1.75rem;
+                            &.group-info-age {
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .pull-left {
+                            float: left;
+                            margin-right: 0.69rem;
+                        }
+                        .pull-right {
+                            float: right;
+                            margin-left: 0.69rem;
+                        }
+                    }
+                    .box-content {
+                        height: calc(100% - 4.13rem);
+                        button.btn {
+                            color: #ffffff;
+                            font-size: 1.5rem;
+                            height: 2.5rem;
+                            line-height: 2.5rem;
+                            text-align: center;
+                            border-radius: 0.5rem;
+                        }
+                    }
+                    .box-three {
+                        height: 17.19rem;
+                        margin-bottom: 1.44rem;
+                        background-size: 100% 100%;
+                        .box-header {
+                            padding: 0 1.75rem;
+                            border-top-right-radius: 0.5rem;
+                            border-top-left-radius: 0.5rem;
+                        }
+                        .box-content {
+                            padding-top: 1.93rem;
+                            .member-info {
+                                float: left;
+                                width: 50%;
+                                height: 50%;
+                                img {
+                                    width: 3.13rem;
+                                    height: 3.13rem;
+                                    border-radius: 1.57rem;
+                                    margin-left: 1.95rem;
+                                    float: left;
+                                }
+                                .member-info-name {
+                                    font-size: 1.63rem;
+                                    color: #ffffff;
+                                    margin-left: 1.24rem;
+                                }
+                            }
+                            button {                                
+                                float: right;
+                                margin-right: 1.38rem;
+                                &.btn-call {
+                                    width: 8.88rem;
+                                    position: relative;
+                                    overflow: hidden;
+                                    .btn-mask {
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        background-color: #000;
+                                        opacity: 0;
+                                        top: 0;
+                                        left: 0;
+                                    }
+                                    span {
+                                        position: relative;
+                                        z-index: 1;
+                                    }
+                                    &.actived {
+                                        .btn-mask {
+                                            animation: flash 0.5s;
+                                        }
+                                    }
+                                }
+                                &.btn-inquire {
+                                    width: 6.19rem;
+                                }
+                            }
+                            .member-info-msg-num {
+                                position: absolute;
+                                background-color: #DECC00;
+                                color: #ffffff;
+                                text-align: center;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                line-height: 1.5rem;
+                                border-radius: 1.25rem;
+                                font-size: 1.09rem;
+                                right: 0.5rem;
+                                top: -0.5rem;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    .box-four {
+                        height: 38.31rem;
+                        background-size: 100% 100%;
+                        .box-header {
+                            background-color: transparent;
+                            ul {
+                                margin: 0;
+                                padding: 0;
+                                li {
+                                    list-style: none;
+                                    float: left;
+                                    width: calc(20% - 0.3rem);
+                                    margin-right: 0.34rem;
+                                    border: 1px solid rgba(255, 255, 255, 0.5);
+                                    height: 4.13rem;
+                                    line-height: 4.13rem;
+                                    font-size: 1.75rem;
+                                    text-align: center;
+                                    background-color: rgba(255, 255, 255, 0.2);
+                                    position: relative;
+                                    &:last-child {
+                                        margin-right: 0;
+                                    }
+                                    &.active {
+                                        font-weight: bold;
+                                    }
+                                    span {
+                                        position: absolute;
+                                        color: #ffffff;
+                                        opacity: 0.5;
+                                        right: 0.2rem;
+                                        top: -1.2rem;
+                                        transform: rotate(180deg);
+                                        text-shadow: none;
+                                    }
+                                }
+                            }
+                        }
+                        .box-content {
+                            .tab-content {
+                                padding-top: 1.81rem;
+                                padding-left: 3rem;
+                                color: #ffffff;
+                                font-size: 1.5rem;
+                                height: 100%;
+                                width: 100%;
+                                .tab-title {
+                                    font-size: 1.75rem;
+                                }
+                                .task-content-normal {
+                                    .task-description {
+                                        margin-top: 2rem;
+                                        margin-bottom: 1.63rem;
+                                        padding-right: 25.75rem;
+                                        height: 20rem;                                    
+                                        overflow-y: scroll;
+                                        line-height: 2.5rem;
+                                        pre {
+                                            margin: 0;
+                                            white-space: pre-wrap !important;
+                                            word-wrap: break-word !important;
+                                            *white-space: normal !important;
+                                            font-family: MicrosoftYaHei;
+                                        }
+                                    }
+                                }
+                                button.btn {
+                                    width: 8.88rem;
+                                    background-size: 100% 100%;
+                                    font-size: 1.5rem;
+                                    margin-right: 5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.skin-engineer {
+                background-image: url('../assets/imgs/career/engineer/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #3D5070 4px 0 7px, #3D5070 0 4px 7px, #3D5070 -4px 0 7px, #3D5070 0 -4px 7px; // -webkit-text-stroke: 3px #3D5070;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #125EAD;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/engineer/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #4C657D;
+                                border: 1px solid #B0BAD3;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #E4FCFF;
+                            }
+                            .btn-inquire {
+                                background-color: #125EAD;
+                                border: 1px solid #419BF5;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #3ED0E6;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/engineer/task-bg.png') no-repeat 0 0;
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(28, 59, 147, 0.26);
+                            border-color: #589BDD;
+                            span {
+                                color: #7EB1E3;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/engineer/btn-bg.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+            &.skin-finance {
+                background-image: url('../assets/imgs/career/finance/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #796124 4px 0 7px, #796124 0 4px 7px, #796124 -4px 0 7px, #796124 0 -4px 7px; // -webkit-text-stroke: 3px #796124;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #E29D1E;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/finance/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #E29C1D;
+                                border: 1px solid #FDEB74;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #FEFFE3;
+                            }
+                            .btn-inquire {
+                                background-color: #32B2BE;
+                                border: 1px solid #03E4FA;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #FFEDE4;
+                            }
+                            .member-info-msg-num {
+                                background-color: #FA722F;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/finance/task-bg.png') no-repeat 0 0;
+                    &.task-trade {
+                        background: url('../assets/imgs/career/finance/task-trade-bg.png') no-repeat 0 0;
+                        .box-content .tab-content {
+                            padding-left: 1.25rem;
+                        }
+                    }
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(121, 97, 26, 0.26);
+                            border-color: #F3B823;
+                            span {
+                                color: #E29D1E;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button {
+                            &.btn {
+                                background: url('../assets/imgs/career/finance/btn-bg.png') no-repeat 0 0;
+                            }
+                            &.btn-yellow {
+                                background-color: #E29C1D;
+                                border: 1px solid #FDEB74;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #FEFFE3;
+                                &.btn-traded {
+                                    background-color: transparent;
+                                    color: #FAC91F;
+                                    box-shadow: none;
+                                }
+                            }
+                            &.btn-blue {
+                                background-color: #32B2BE;
+                                border: 1px solid #03E4FA;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #FFEDE4;
+                            }
+                        }
+                        .task-content-trade {
+                            margin-top: 1rem;
+                            height: 36.5rem;
+                            .text-red {
+                                color: #F44B4B;
+                            }
+                            .text-green {
+                                color: #87CC4A;
+                            }
+                            .scroll-box {
+                                height: 23rem;
+                                overflow-y: scroll;
+                                margin-bottom: 1.25rem;
+                                .base-info p {
+                                    height: 1.56rem;
+                                    line-height: 1.56rem;
+                                    font-size: 1.5rem;
+                                    margin-top: 1.13rem;
+                                    letter-spacing: 0.1rem;
+                                    span {
+                                        float: left;
+                                        width: 20rem;
+                                        i {
+                                            font-style: normal;
+                                        }
+                                    }
+                                }
+                                .stock-list-box {
+                                    margin-top: 1.06rem;
+                                    width: calc(100% - 1.25rem);
+                                    table {
+                                        width: 100%;
+                                        button {
+                                            width: 3.38rem;
+                                            height: 2.5rem;
+                                            font-size: 1.5rem;
+                                            padding: 0;
+                                        }
+                                        tr {
+                                            th {
+                                                height: 3.56rem;
+                                                padding-left: 0.44rem;
+                                                background: rgba(255, 255, 255, 0.2);
+                                                font-weight: normal;
+                                                &:first-child {
+                                                    text-align: left;
+                                                }
+                                            }
+                                            td {
+                                                padding: 0.75rem 0.44rem 0.25rem 0.44rem;
+                                                text-align: center;
+                                                &:first-child {
+                                                    text-align: left;
+                                                }
+                                                .iconfont {
+                                                    font-size:2.6rem;
+                                                    &.text-green {
+                                                        font-size: 1.4rem;
+                                                    }
+                                                }
+                                                button {
+                                                    position: relative;
+                                                    line-height: 2.5rem;
+                                                    margin-left: 0.5rem;
+                                                    span {
+                                                        position: absolute;
+                                                        width: 1.56rem;
+                                                        height: 1.56rem;
+                                                        line-height: 1.56rem;
+                                                        border-radius: 0.78rem;
+                                                        background-color: #FA722F;
+                                                        color: #ffffff;
+                                                        top: -0.56rem;
+                                                        right: -0.36rem;
+                                                        font-size: 1.13rem;
+                                                        text-align: center;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .stock-list-box-footer {
+                                height: 3.75rem;
+                                width: calc(100% - 1.25rem);
+                                background: rgba(255, 255, 255, 0.2);
+                                line-height: 3.75rem;
+                                padding: 0 0.37rem;
+                                button {
+                                    float: right;
+                                    width: 5.44rem;
+                                    height: 2.5rem;
+                                    line-height: 2.5rem;
+                                    font-size: 1.5rem;
+                                    margin-top: 0.56rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.skin-wedding {
+                background-image: url('../assets/imgs/career/wedding/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #7D297A 4px 0 7px, #7D297A 0 4px 7px, #7D297A -4px 0 7px, #7D297A 0 -4px 7px; // -webkit-text-stroke: 3px #7D297A;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #D325CD;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/wedding/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #A1449E;
+                                border: 1px solid #F73DEC;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #FAE3FF;
+                            }
+                            .btn-inquire {
+                                background-color: #F3B819;
+                                border: 1px solid #FFF609;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #F16A20;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/wedding/task-bg.png') no-repeat 0 0;
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(183, 77, 177, 0.26);
+                            border-color: #F73DEC;
+                            text-shadow: 0px 0px 26px #A1449E;
+                            span {
+                                color: #D06DCD;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/wedding/btn-bg.png') no-repeat 0 0;
+                        }
+                        .task-content-marry {
+                            position: relative;
+                            .task-description {
+                                margin-top: 2.75rem;
+                                margin-bottom: 1.87rem;
+                                padding-right: 26.69rem;
+                                height: 21.88rem;
+                                overflow-y: scroll;
+                                line-height: 2.5rem;
+                                p {
+                                    height: 2.5rem;
+                                    line-height: 2.5rem;
+                                    margin: 2.16rem 0;
+                                    text-indent: 2rem;
+                                    .btn {
+                                        float: right;
+                                        margin-right: 0rem;
+                                    }
+                                }
+                                button.btn-witnesses {
+                                    position: absolute;
+                                    background: #F3B819;
+                                    border: 1px solid #FFF609;
+                                    box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                    right: 3.5rem;
+                                    bottom: -4rem;
+                                }
+                            }
+                            .task-marry-success {
+                                line-height: 30rem;
+                                padding-right: 33.42rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+            &.skin-training {
+                background-image: url('../assets/imgs/career/training/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #43297D 4px 0 7px, #43297D 0 4px 7px, #43297D -4px 0 7px, #43297D 0 -4px 7px; // -webkit-text-stroke: 3px #43297D;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #5F42BC;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/training/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #452E8F;
+                                border: 1px solid #956AFA;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #E4FCFF;
+                            }
+                            .btn-inquire {
+                                background-color: #F3B819;
+                                border: 1px solid #FFF609;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #F16A20;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/training/task-bg.png') no-repeat 0 0;
+                    &.task-questions {
+                        background: url('../assets/imgs/career/training/task-bg-question.png') no-repeat 0 0;
+                    }
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(72, 48, 168, 0.26);
+                            border-color: #5228D9;
+                            text-shadow: 0 0 30px #483192;
+                            span {
+                                color: #512BC9;
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/training/btn-bg.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+            &.skin-entertainment {
+                background-image: url('../assets/imgs/career/entertainment/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #4A23A0 4px 0 7px, #4A23A0 0 4px 7px, #4A23A0 -4px 0 7px, #4A23A0 0 -4px 7px; // -webkit-text-stroke: 3px #4A23A0;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #4A23A0;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/entertainment/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #4A23A0;
+                                border: 1px solid #7E12F8;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #E3D6FC;
+                            }
+                            .btn-inquire {
+                                background-color: #CA1D6F;
+                                border: 1px solid #FF76F7;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #DECC00;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/entertainment/task-bg.png') no-repeat 0 0;
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(174, 117, 238, 0.26);
+                            border-color: #7E12F8;
+                            text-shadow: 0 0 30px #151b77;
+                            span {
+                                color: #5021F5;
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/entertainment/btn-bg.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+            &.skin-actuaries {
+                background-image: url('../assets/imgs/career/actuaries/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #148FE3 4px 0 7px, #148FE3 0 4px 7px, #148FE3 -4px 0 7px, #148FE3 0 -4px 7px; // -webkit-text-stroke: 3px #148FE3;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #148FE3;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/actuaries/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #138CE1;
+                                border: 1px solid #47AFF7;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #EAF8FD;
+                            }
+                            .btn-inquire {
+                                background-color: #CA324C;
+                                border: 1px solid #FF314E;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #F3B622;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/actuaries/task-bg.png') no-repeat 0 0;
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(49, 113, 221, 0.26);
+                            border-color: #42AFFB;
+                            span {
+                                color: #148FE3;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/actuaries/btn-bg.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+            &.skin-catering {
+                background-image: url('../assets/imgs/career/catering/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #D36116 4px 0 7px, #D36116 0 4px 7px, #D36116 -4px 0 7px, #D36116 0 -4px 7px; // -webkit-text-stroke: 3px #D36116;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #F56E0F;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/catering/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #F56D0A;
+                                border: 1px solid #FFAD10;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #EAFCDE;
+                            }
+                            .btn-inquire {
+                                background-color: #4AAE12;
+                                border: 1px solid #85EA42;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #F16A20;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/catering/task-bg.png') no-repeat 0 0;
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(255, 117, 6, 0.26);
+                            border-color: #FF7506;
+                            text-shadow: 0 0 30px #FF7506;
+                            span {
+                                color: #FF7506;
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/catering/btn-bg.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+            &.skin-public {
+                background-image: url('../assets/imgs/career/public/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #BF1D1D 4px 0 7px, #BF1D1D 0 4px 7px, #BF1D1D -4px 0 7px, #BF1D1D 0 -4px 7px; // -webkit-text-stroke: 3px #BF1D1D;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #DF3534;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/public/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #C62E2C;
+                                border: 1px solid #FD846C;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #E4FCFF;
+                            }
+                            .btn-inquire {
+                                background-color: #FB9C20;
+                                border: 1px solid #FAE068;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #F03B34;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/public/task-bg.png') no-repeat 0 0;
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(237, 73, 73, 0.26);
+                            border-color: #FC3E2D;
+                            text-shadow: 0 0 30px #FC3E2D;
+                            span {
+                                color: #F7514B;
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/public/btn-bg.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+            &.skin-design {
+                background-image: url('../assets/imgs/career/design/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #1D58BC 4px 0 7px, #1D58BC 0 4px 7px, #1D58BC -4px 0 7px, #1D58BC 0 -4px 7px; // -webkit-text-stroke: 3px #1D58BC;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #1D58BC;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/design/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #193565;
+                                border: 1px solid #1A6CB4;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #FFFFFF;
+                            }
+                            .btn-inquire {
+                                background-color: #DA494E;
+                                border: 1px solid #FF5176;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #F1B105;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/design/task-bg.png') no-repeat 0 0;
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(26, 108, 180, 0.26);
+                            border-color: #0087FE;
+                            text-shadow: 0 0 30px #0087FE;
+                            span {
+                                color: #1A3C72;
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/design/btn-bg.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+            &.skin-architectural {
+                background-image: url('../assets/imgs/career/architectural/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #2B94D6 4px 0 7px, #2B94D6 0 4px 7px, #2B94D6 -4px 0 7px, #2B94D6 0 -4px 7px; // -webkit-text-stroke: 3px #2B94D6;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #365C97;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/architectural/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #3972AA;
+                                border: 1px solid #5ACBFA;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #FFFFFF;
+                            }
+                            .btn-inquire {
+                                background-color: #D9973C;
+                                border: 1px solid #FBED10;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #F3722C;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/architectural/task-bg.png') no-repeat 0 0;
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(107, 188, 235, 0.26);
+                            border-color: #6BBCEB;
+                            text-shadow: 0 0 30px #6BBCEB;
+                            span {
+                                color: #48ABF7;
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/architectural/btn-bg.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+            &.skin-fitness {
+                background-image: url('../assets/imgs/career/fitness/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #0C737E 4px 0 7px, #0C737E 0 4px 7px, #0C737E -4px 0 7px, #0C737E 0 -4px 7px; // -webkit-text-stroke: 3px #0C737E;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #0C737E;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/fitness/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #0C737E;
+                                border: 1px solid #16C2D4;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #E4FCFF;
+                            }
+                            .btn-inquire {
+                                background-color: #AB2040;
+                                border: 1px solid #F2255F;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #F29840;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/fitness/task-bg.png') no-repeat 0 0;
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(80, 225, 243, 0.26);
+                            border-color: #16C2D4;
+                            text-shadow: 0 0 30px #16C2D4;
+                            span {
+                                color: #7EB1E3;
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/fitness/btn-bg.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+            &.skin-tourism {
+                background-image: url('../assets/imgs/career/tourism/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #1E335D 4px 0 7px, #1E335D 0 4px 7px, #1E335D -4px 0 7px, #1E335D 0 -4px 7px; // -webkit-text-stroke: 3px #1E335D;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #DC9D41;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/tourism/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #D9973C;
+                                border: 1px solid #FBED10;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #FEFFFE;
+                            }
+                            .btn-inquire {
+                                background-color: #226ECE;
+                                border: 1px solid #6CBCFA;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #F16A20;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/tourism/task-bg.png') no-repeat 0 0;
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(226, 153, 51, 0.26);
+                            border-color: #FDAE37;
+                            text-shadow: 0 0 30px #FDAE37;
+                            span {
+                                color: #FFC16B;
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/tourism/btn-bg.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+            &.skin-media {
+                background-image: url('../assets/imgs/career/media/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #0C737E 4px 0 7px, #0C737E 0 4px 7px, #0C737E -4px 0 7px, #0C737E 0 -4px 7px; // -webkit-text-stroke: 3px #0C737E;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #1A93CE;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/media/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #1C538B;
+                                border: 1px solid #4098DB;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #E3FCFF;
+                            }
+                            .btn-inquire {
+                                background-color: #E5AC00;
+                                border: 1px solid #FDF518;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #F0592A;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/media/task-bg.png') no-repeat 0 0;
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(44, 123, 196, 0.26);
+                            border-color: #1084EF;
+                            text-shadow: 0 0 30px #1084EF;
+                            span {
+                                color: #7EB1E3;
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/media/btn-bg.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+            &.skin-medical {
+                background-image: url('../assets/imgs/career/medical/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #21ADD3 4px 0 7px, #21ADD3 0 4px 7px, #21ADD3 -4px 0 7px, #21ADD3 0 -4px 7px; // -webkit-text-stroke: 3px #21ADD3;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #50AAD9;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/medical/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #1EACD2;
+                                border: 1px solid #52DBFF;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #FFFFFF;
+                            }
+                            .btn-inquire {
+                                background-color: #FBAC23;
+                                border: 1px solid #FBF2BE;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #FF3833;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/medical/task-bg.png') no-repeat 0 0;
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(47, 181, 215, 0.26);
+                            border-color: #1FD4F5;
+                            span {
+                                color: #1FD4F5;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/medical/btn-bg.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+            &.skin-football {
+                background-image: url('../assets/imgs/career/football/bg.png');
+                .box-one {
+                    p.title {
+                        text-shadow: #244711 4px 0 7px, #244711 0 4px 7px, #244711 -4px 0 7px, #244711 0 -4px 7px; // -webkit-text-stroke: 3px #244711;
+                    }
+                }
+                .box-two {
+                    .icon-play {
+                        color: #519D24;
+                    }
+                }
+                .box-three {
+                    background: url('../assets/imgs/career/football/group-bg.png') no-repeat 0 0;
+                    .box-content {
+                        .member-info {
+                            position: relative;
+                            .btn-call {
+                                background-color: #438D1B;
+                                border: 1px solid #76E539;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                                color: #EAFCDE;
+                            }
+                            .btn-inquire {
+                                background-color: #F3B819;
+                                border: 1px solid #FFF609;
+                                box-shadow: 0 0 0.8em 0.2em #ffffff2b inset;
+                            }
+                            .member-info-msg-num {
+                                background-color: #F16A20;
+                            }
+                        }
+                    }
+                }
+                .box-four {
+                    background: url('../assets/imgs/career/football/task-bg.png') no-repeat 0 0;
+                    .box-header {
+                        ul li.active {
+                            background-color: rgba(140, 224, 93, 0.26);
+                            border-color: #76E539;
+                            text-shadow: 0 0 30px #76E539;
+                            span {
+                                color: #58C918;
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                    .box-content {
+                        button.btn {
+                            background: url('../assets/imgs/career/football/btn-bg.png') no-repeat 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

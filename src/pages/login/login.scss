@@ -1,0 +1,30 @@
+page-login {
+    ion-content {
+        .scroll-content {
+            background-image: url('../assets/imgs/login/bg.png');
+            background-size: 100% 100%;
+            #login-box {
+                width: 25rem;
+                margin: 25rem auto;
+                input {
+                    width: 25rem;
+                    height: 5rem;
+                    font-size: 2rem;
+                    border-radius: 0.5rem;
+                    overflow: hidden;
+                    padding: 0 3rem;
+                    border: 1px solid #EDEDED;
+                }
+                button.btn-login {
+                    width: 25rem;
+                    height: 5rem;
+                    font-size: 2rem;
+                    background-color: #44B0F5;
+                    color: #fff;
+                    border-radius: 0.5rem;
+                    margin-top: 3rem;
+                }
+            }
+        }
+    }
+}

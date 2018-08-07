@@ -1,0 +1,67 @@
+<div class="task-content-trade">
+  <div class="tab-title">任务详情</div>
+  <div class="scroll-box">
+    <div class="base-info">
+      <p>
+        <span>基金名称：{{data.stockInfo?.name}}</span>
+        <span>本期募集金额:{{data.stockInfo?.raiseAmount}}</span>
+      </p>
+      <p>
+        <span>当前总价值：{{data.stockInfo?.totalValue}}</span>
+        <span>可投资金额:{{data.stockInfo?.availableAmount}}</span>
+      </p>
+      <p>
+        <span>当前总市值：{{data.stockInfo?.totalMarketValue}}</span>
+        <span>涨跌比例:
+          <i [ngClass]="{'text-red':data.stockInfo?.ratio>=0,'text-green':data.stockInfo?.ratio<0}">{{data.stockInfo?.ratio}}%</i>
+        </span>
+      </p>
+      <p>当前总资产涨跌比例在各基金种的排名：第{{data.stockInfo?.rank}}名</p>
+    </div>
+    <div class="stock-list-box">
+      <table *ngIf="!data.finished">
+        <tr>
+          <th>股票名称</th>
+          <th>持有数量</th>
+          <th>平均价格</th>
+          <th>涨跌比例</th>
+          <th>走势图</th>
+          <th>当前价格</th>
+          <th>操作</th>
+        </tr>
+        <tr *ngFor="let item of data.stockInfo?.stockList;" [ngClass]="{'item-traded':item.buyed||item.selled}">
+          <td>{{item.name}}</td>
+          <td>{{item.total}}</td>
+          <td>{{item.averagePrice}}</td>
+          <td [ngClass]="{'text-red':item.ratio>=0,'text-green':item.ratio<0}">{{item.ratio}}%</td>
+          <td>
+            <span class="iconfont" [ngClass]="{'text-red icon-jiantou':item.ratio>=0,'text-green icon-jiantou_huabanfuben':item.ratio<0}"></span>
+          </td>
+          <td>{{item.curPrice}}</td>
+          <td>
+            <button class="btn-yellow" [ngClass]="{'btn-traded':item.buyed}" (click)="buyStock(item.id)">买</button>
+            <button class="btn-yellow" [ngClass]="{'btn-traded':item.selled}" (click)="sellStock(item.id)">卖</button>
+            <button class="btn-blue" (click)="recommendStock(item.id)">荐</button>
+            <button class="btn-blue" (click)="scanStockMsg(item.id)">消息
+              <span>{{item.msgNum}}</span>
+            </button>
+          </td>
+        </tr>
+      </table>
+      <table *ngIf="data.finished">
+        <tr>
+          <th>股票
+            <br>名称</th>
+          <th *ngFor="let item of data.stockInfo?.stockList">{{item.name}}</th>
+        </tr>
+        <tr>
+          <td>获利/亏损</td>
+          <td *ngFor="let item of data.stockInfo?.stockList" [ngClass]="{'text-red':item.profit>=0,'text-green':item.profit<0}">{{filterProfit(item.profit)}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="stock-list-box-footer" *ngIf="!data.finished">倒计时:{{ remainTime | countdown}}
+    <button class="btn-yellow" [disabled]="!canTrade" (click)="submitStock()">确定</button>
+  </div>
+</div>

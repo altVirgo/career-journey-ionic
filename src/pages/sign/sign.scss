@@ -1,0 +1,89 @@
+page-sign {
+    height: 120em;
+    font-size: 2rem;
+    ion-content {
+        .scroll-content {
+            background-image: url('../assets/imgs/login/bg.png');
+            background-size: 100% 100%;
+            #sign-box {
+                width: 107.25rem;
+                margin: 10.88rem auto;
+                .student-info {
+                    height: 33.56rem;
+                    .student-item {
+                        display: flex;
+                        width: 51.25rem;
+                        height: 12.5rem;
+                        background: #ffffff;
+                        border-radius: 0.5rem;
+                        float: left;
+                        margin-right: 4.25rem;
+                        margin-bottom: 2.5rem;
+                        padding: 3rem;
+                        &.item-even {
+                            margin-right: 0;
+                        }
+                        .item-img {
+                            width: 7.56rem;
+                            img {
+                                width: 5.5rem;
+                                height: 5.5rem;
+                                border-radius: 2.75rem;
+                            }
+                        }
+                        .item-info {
+                            flex: 1;
+                            font-size: 1.75rem;
+                            color: #333333;
+                            span {
+                                margin-right: 3rem;
+                            }
+                            .item-name {
+                                font-size: 2rem;
+                                color: #000000;
+                                margin-bottom: 1rem;
+                            }
+                        }
+                        .check-btn,
+                        .check-info {
+                            width: 10rem;
+                            button {
+                                width: 7.5rem;
+                                height: 3.75rem;
+                                line-height: 3.75rem;
+                                margin-top: 1rem;
+                            }
+                        }
+                        .check-info {
+                            font-size: 1.75rem;
+                            p {
+                                text-align: right;
+                                color: #666666;
+                                font-weight: lighter;
+                                &:first-child {
+                                    margin-bottom: 1.5rem;
+                                    color: #44B0F5
+                                }
+                            }
+                        }
+                    }
+                }
+                .teacher-check {
+                    height: 12.5rem;
+                    background-color: #fff;
+                    font-size: 2rem;
+                    border-radius: 0.5rem;
+                    line-height: 3.75rem;
+                    padding: 4.38rem 4.13rem;
+                    color: #666666;
+                    button {
+                        width: 12.25rem;
+                        height: 3.75rem;
+                        line-height: 3.75rem;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}

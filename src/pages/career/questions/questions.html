@@ -1,0 +1,30 @@
+<div>
+    <div class="before-training" *ngIf="status===-1">
+        <input type="password" [(ngModel)]="pw" placeholder="请输入个人密码开始答题" />
+        <br/>
+        <button class="btn" (click)="start()">确认</button>
+    </div>
+    <div class="cur-training" *ngIf="status===0">
+        <div class="title">
+            XXX培训问卷答题
+        </div>
+        <div class="list-box">
+            <div *ngFor="let item of data.examList; let i=index;">
+                <p class="item-question">{{i+1}}.{{item.question}}</p>
+                <ion-list radio-group [(ngModel)]="item.cur" (ionChange)="checkCanSubmit()">
+                    <ion-item *ngFor="let answer of item.options">
+                        <ion-radio value="{{answer.id}}"></ion-radio>
+                        <ion-label>{{answer.text}}</ion-label>
+                    </ion-item>
+                </ion-list>
+            </div>
+        </div>
+        <div class="footer">
+            倒计时：{{remainTime | countdown}}
+            <button class="btn-submit" [disabled]="!canSubmit" (click)="submit()">答题完毕，确认提交</button>
+        </div>
+    </div>
+    <div class="after-training" *ngIf="status===1">
+        XX本次考试成绩得分为{{scores}}分
+    </div>
+</div>

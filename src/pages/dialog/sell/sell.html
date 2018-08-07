@@ -1,0 +1,12 @@
+<ion-content>
+    <div class="content-box">
+        <p>
+            <label>卖出</label>
+            <input type="number" [(ngModel)]="money" placeholder="请输入金额" />
+        </p>
+    </div>
+</ion-content>
+<ion-footer>
+    <button class="btn-cancel" (click)="cancel()">取消</button>
+    <button class="btn-ok" (click)='ok()'>确认</button>
+</ion-footer>

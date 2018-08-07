@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color='dark'>
+    <ion-title>
+      生涯之旅
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div id="video-box">
+    <div class="floorOne">
+      <p>
+        <span *ngFor="let item of textAnimate.text" [ngClass]="{'active':item.active}">{{item.letter}}</span>
+      </p>
+      <button [ngClass]="{'active':video.canPlay&&video.target?.readyState===4}" (click)="startPlayVideo()">
+        <span class="iconfont icon-bofang"></span>
+        <span class="text">点击播放视频</span>
+      </button>
+    </div>
+    <div id="video-container" [ngClass]="{'active':video.show}">
+      <video id="video-content" width='100%' height='100%'>
+        您的浏览器不支持 video 标签。
+      </video>
+      <div class="mask" (click)="pauseVideo()">
+        <div *ngIf="video.target?.paused" (click)="playVideo($event)">
+          <span class="iconfont icon-sanjiaoxing"></span>
+        </div>
+      </div>
+      <div class="video-operator" [ngClass]="{'active':isShowBtn}">
+        <button (click)="replayVideo()">
+          <span class="iconfont icon-shuaxin"></span>
+          <span class="text">重播</span>
+        </button>
+        <button (click)="nextPage()">
+          <span class="iconfont icon-49xiayishou"></span>
+          <span class="text">跳过</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

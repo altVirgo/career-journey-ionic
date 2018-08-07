@@ -1,0 +1,11 @@
+<ion-content>
+    <div class="content-box">
+        <p>
+            <textarea type="text" [(ngModel)]="text" placeholder="xxx你正在给xxx项目点赞，表达你的支持，你是否已经仔细观看过相关的内容？这是非常严肃认真的一件事情。"></textarea>
+        </p>
+    </div>
+</ion-content>
+<ion-footer>
+    <button class="btn-cancel" (click)="cancel()">取消</button>
+    <button class="btn-ok" (click)='ok()'>确认</button>
+</ion-footer>

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 11,
+        "imgUrl": "/assets/imgs/career/avatar/img.png",
+        "name": "许艺馨",
+        "checked": false,
+        "class": "一年级2班",
+        "job": "医生",
+        "branch": "一科室"
+    },
+    {
+        "id": 12,
+        "imgUrl": "/assets/imgs/career/avatar/img.png",
+        "name": "黄小芽",
+        "checked": false,
+        "class": "一年级2班",
+        "job": "医生",
+        "branch": "一科室"
+    },
+    {
+        "id": 13,
+        "imgUrl": "/assets/imgs/career/avatar/img.png",
+        "name": "曹毅程",
+        "checked": false,
+        "class": "一年级2班",
+        "job": "医生",
+        "branch": "一科室"
+    },
+    {
+        "id": 14,
+        "imgUrl": "/assets/imgs/career/avatar/img.png",
+        "name": "王成程",
+        "checked": false,
+        "class": "一年级2班",
+        "job": "医生",
+        "branch": "一科室"
+    }
+]

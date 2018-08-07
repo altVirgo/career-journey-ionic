@@ -1,0 +1,128 @@
+<ion-header>
+  <ion-navbar color='dark'>
+    <ion-title>
+      生涯之旅
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <audio src="assets/audio/broadcast.mp3" style="display: none;" id="audio-broadcast">Your browser does not support the audio tag.</audio>
+  <audio src="assets/audio/callAngel.mp3" style="display: none;" id="audio-call-angel">Your browser does not support the audio tag.</audio>
+  <div id="career-box" class="{{className}}">
+    <div class="flex">
+      <div class="flex-left">
+        <div class="box-one">
+          <p class="title">您好,欢迎来到{{scenesList[type]}}</p>
+          <p class="time">{{curTime}}</p>
+          <div class="banner" *ngIf="bannerList.length>0">
+            <ion-slides pager autoplay="5000" spaceBetween='0'>
+              <ion-slide *ngFor="let img of bannerList">
+                <img src="{{img}}" alt="">
+              </ion-slide>
+            </ion-slides>
+          </div>
+        </div>
+        <div class="box-two">
+          <!-- 电视台 -->
+          <div class="TV-box">
+            <p class="title">未来电视台</p>
+            <div class="flex">
+              <video id="future-TV" src="http://yun.it7090.com/video/XHLaunchAd/video02.mp4" autoplay></video>
+              <div class="TV-list">
+                <ul>
+                  <li *ngFor="let item of TVList; let i=index;" (click)="changeTV(item.url,i)" [ngClass]="{'active':item.active}">{{item.name}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 广播台 -->
+          <div class="message-box" (click)="newBroadcast()">
+            <span class="icon-play iconfont icon-laba-"></span>
+            <marquee id="marquee-container" behavior="scroll" direction="left" scrollamount='5'>
+              <p>
+                <span *ngFor="let item of msgList">
+                  {{item}}
+                </span>
+              </p>
+            </marquee>
+          </div>
+        </div>
+      </div>
+      <div class="flex-right">
+        <!-- 组员信息 -->
+        <div class="box-three">
+          <div class="box-header">
+            <div class="title pull-left">团队成员</div>
+            <div class="group-info-age  pull-left">平均年龄:{{groupInfo?.averageAge}}岁</div>
+            <div class="group-info-money pull-right">营业额:{{groupInfo?.totalMoney}}</div>
+            <div class="group-info-rank pull-right">当前排名:{{groupInfo?.rank}}</div>
+          </div>
+          <div class="box-content">
+            <div class="member-info" *ngFor="let item of groupInfo?.member">
+              <img src="{{item.imgUrl}}" alt="">
+              <span class="member-info-name">{{item.name}}</span>
+              <button class="btn btn-inquire" (click)="searchMemberMsg()">查询</button>
+              <button class="btn btn-call" (click)="callAngel(item.id)" [ngClass]="{'actived':calling}">
+                <div class=btn-mask> </div>
+                <span>呼叫天使</span>
+              </button>
+              <span class="member-info-msg-num"> {{item.msgNum}}</span>
+            </div>
+          </div>
+        </div>
+        <!-- 任务栏 -->
+        <div class="box-four" [ngClass]="{'task-trade':curTask.taskType===2,'task-questions':curTask.taskType===4}">
+          <div class="box-header">
+            <ul>
+              <li class="tab-index" *ngFor="let task of taskList;let i=index;" [ngClass]="{'active':curTask.taskId===task.taskId}" (click)="changeTask(task,i)">
+                {{task.name}}
+                <span class="iconfont icon-zhijiao-triangle"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="box-content">
+            <div class="tab-content">
+              <!-- 任务详情： 常规任务 -->
+              <div class="task-content-normal" *ngIf="curTask.taskType===0 || !curTask.taskType">
+                <div class="tab-title">任务详情</div>
+                <div class="task-description">
+                  <pre>
+                {{curTask.description}}</pre>
+                </div>
+                <div class="operator">
+                  <button class="btn" *ngFor="let btn of curTask.buttons" (click)="doTask(btn.type)">{{btn.text}}</button>
+                </div>
+              </div>
+              <!-- 任务详情： 股票交易 -->
+              <page-stock *ngIf="curTask.taskType===2" [(data)]="taskList[curTask.index]" [groupId]="groupId" (trade)="initDataStock(curTask.index)" [(curRound)]="curRound" [(remainTime)]="remainTime"></page-stock>
+              <!-- 任务详情： 结婚 -->
+              <div class="task-content-marry" *ngIf="curTask.taskType===3">
+                <div class="tab-title">任务详情</div>
+                <div class="task-description" *ngIf="!curTask.finished">
+                  请你们起立，面对登记员站立！下面我将宣读中华人民共和国婚姻法。中华人民共和国施行婚姻自由，婚内平等的婚姻制度，保护每一个家庭成员的合法权益的法律制度，请问你们是否愿意遵守法律的规定？”
+                  <p>
+                    你是否愿意和XX结为夫妻？
+                    <button class="btn btn-sure" (click)="addCouple(0)">确认</button>
+                  </p>
+                  <p>
+                    我愿意！
+                    <button class="btn btn-sure" (click)="addCouple(1)">确认</button>
+                  </p>
+                  <button class="btn btn-witnesses" (click)="marry()">证婚人确认</button>
+                </div>
+                <div class="task-marry-success" *ngIf="curTask.finished">
+                  恭喜，小小和大大结为夫妻！
+                </div>
+              </div>
+              <!-- 任务详情： 问卷答题 -->
+              <page-questions *ngIf="curTask.taskType===4" [(data)]="taskList[curTask.index]" [(remainTime)]="questionRemainTime"
+                [(status)]="questionStatus"></page-questions>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

@@ -1,0 +1,50 @@
+.md {
+    page-message {
+        ion-content {
+            position: relative;
+            .modal-close {
+                position: absolute;
+                right: -30px;
+            }
+            .content-box {
+                padding: 1.5rem;
+                height: 100%;
+                overflow-y: scroll;
+                margin-bottom:1.5rem ;
+                .msg-item {
+                    overflow: hidden;
+                    .msg-title {
+                        height: 6.13rem;
+                        line-height: 6.13rem;
+                        background-color: #ffffff;
+                        font-size: 1.75rem;
+                        border-top: 1px solid #CFC9C9;
+                        padding: 0 1.63rem;
+                    }
+                    .msg-content {
+                        height: 0;
+                        background-color: #F7F7F7;
+                        color: #666666;
+                        font-size: 1.63rem;
+                        line-height: 2rem;
+                        div {
+                            padding: 1.63rem;
+                        }
+                    }
+                    &.active {
+                        .msg-content {
+                            height: 100%;
+                            border-top: 1px solid #CFC9C9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal-memberMsg {
+        .modal-wrapper {
+            top: calc(50% - (33.75rem/2));
+            height: 33.75rem;
+        }
+    }
+}

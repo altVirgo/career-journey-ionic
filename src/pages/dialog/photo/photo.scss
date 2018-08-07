@@ -1,0 +1,39 @@
+.md {
+    page-photo {
+        ion-content {
+            .content-box {
+                padding: 5rem 2rem;
+                font-size: 1.75rem;
+                line-height: 6.67rem;
+                div {
+                    color: #666666;
+                    float: left;
+                    width: 33.33%;
+                    text-align: center;
+                    span {
+                        display: inline-block;
+                        font-size: 6rem;
+                        color: #999999;
+                        height: 8.2rem;
+                        &.icon-shipin-tianchong {
+                            font-size: 5.1rem;
+                        }
+                    }
+                    p{
+                        line-height: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .modal-photo {
+        .modal-wrapper {
+            ion-footer {
+                button {
+                    width: 100%;
+                    border: none;
+                }
+            }
+        }
+    }
+}
